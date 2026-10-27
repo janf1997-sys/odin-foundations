@@ -1,29 +1,50 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Recipes Page</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odin Recipes Page</title>
+    <!-- Google Font: Roboto (Variable Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Font: Roboto (Variable Font) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Deine globale CSS-Boilerplate -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Deine globale CSS-Boilerplate -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <h1>Odin Recipes</h1>
-  <div class="container">
-    <a href="recipes/lasagna.html"><img class="nav-pic" src="./images/lasagna.jpg" width="400" height="400"></a>
-    <a href="recipes/butter_tofu.html"><img class="nav-pic" src="./images/butter_tofu.jpg" width="400" height="400"></a>
-    <a href="recipes/crispy_tofu.html"><img class="nav-pic" src="./images/crispy_tofu.jpg" width="400" height="400"></a>
-  </div>
-  <a class="home-button" href="../index.html">Back to foundations</a>
-</body>
-
+  <body>
+    <h1>Odin Recipes</h1>
+    <div class="container">
+      <a class="recipe-card" href="recipes/lasagna.html"
+        ><img
+          class="nav-pic"
+          src="./images/lasagna.jpg"
+          width="400"
+          height="400"
+        /><span class="recipe-name">Lasagna</span></a
+      >
+      <a class="recipe-card" href="recipes/butter_tofu.html"
+        ><img
+          class="nav-pic"
+          src="./images/butter_tofu.jpg"
+          width="400"
+          height="400"
+        /><span class="recipe-name">Butter Tofu</span></a
+      >
+      <a class="recipe-card" href="recipes/crispy_tofu.html"
+        ><img
+          class="nav-pic"
+          src="./images/crispy_tofu.jpg"
+          width="400"
+          height="400"
+        /><span class="recipe-name">Crispy Tofu</span></a
+      >
+    </div>
+    <a class="home-button" href="../index.html">Back to foundations</a>
+  </body>
 </html>
