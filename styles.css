@@ -1,0 +1,95 @@
+:root {
+  --bg-main: #f2f4f3;
+  --primary: #177e89;
+  --primary-hover: #084c61;
+  --text-main: #53423c;
+  --text-heading: #3b2f2b;
+  --accent: #ff9b42;
+  --font-main: 'Roboto', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  padding: 2rem 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
+}
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.75rem;
+}
+.project-list {
+  list-style-type: none;
+}
+.project-list li {
+  margin-bottom: 0.5rem;
+}
+.project-list a {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-list a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 2rem auto 1.5rem auto;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.page-header h1 {
+  grid-column: 2;
+  margin: 0;
+  text-align: center;
+}
+.home-button {
+  grid-column: 3;
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 2px solid var(--primary-hover);
+  margin: 50px auto;
+  color: #fff;
+  transition: ease-in-out 0.2s;
+  font-weight: 600;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.home-button:hover {
+  scale: 1.1;
+}
+.home-button::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTUgMjF2LThhMSAxIDAgMCAwLTEtMWgtNGExIDEgMCAwIDAtMSAxdjgiLz48cGF0aCBkPSJNMyAxMGEyIDIgMCAwIDEgLjcwOS0xLjUyOGw3LTZhMiAyIDAgMCAxIDIuNTgyIDBsNyA2QTIgMiAwIDAgMSAyMSAxMHY5YTIgMiAwIDAgMS0yIDJINWEyIDIgMCAwIDEtMi0yeiIvPjwvc3ZnPg==');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
