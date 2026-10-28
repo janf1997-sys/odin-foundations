@@ -73,3 +73,26 @@ a {
 .home-button:hover {
   scale: 1.1;
 }
+
+.recipe-body {
+  display: grid;
+  grid-template-columns: repeat(40%, 60%);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px 64px;
+}
+
+.recipe-ingridients {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.recipe-steps {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+.recipe-picture {
+  border-radius: 5%;
+}
