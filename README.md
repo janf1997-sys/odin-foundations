@@ -4,19 +4,19 @@ This repository contains all projects, coding challenges, and exercises complete
 
 The primary objective of this course is establishing rigorous fundamentals in front-end architecture, modern JavaScript runtime behavior, Git workflows, and semantic web development.
 
+👉 **Live Projects Overview:** [janf1997-sys.github.io/odin-foundations](https://janf1997-sys.github.io/odin-foundations/)
+
 ---
 
-## 📂 Repository Structure
+## 🚀 Key Projects & Live Demos
 
-```text
-odin-foundations/
-├── recipes/             # Project 1: Pure HTML semantic document structure
-├── landing-page/        # Project 2: Responsive page layout using CSS Flexbox
-├── rock-paper-scissors/ # Project 3: Core JavaScript logic, conditionals & DOM updates
-├── etch-a-sketch/       # Project 4: Dynamic grid generation & event listeners
-├── calculator/          # Project 5: State management, math logic & UI error handling
-└── exercises/           # Practice katas, JS exercises, and quick sandboxes
-```
+| Project | Track | Tech Stack | Live Demo | Source Code |
+| :--- | :--- | :--- | :---: | :---: |
+| **Recipes** | Foundations | HTML | [Demo](https://janf1997-sys.github.io/odin-foundations/01_odin-recipes/index.html) | [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/01_odin-recipes) |
+| **Landing Page** | Foundations | HTML, Modern CSS (Flexbox) | [Demo](#) | [Code](#) |
+| **Rock Paper Scissors** | Foundations | JavaScript (DOM Manipulation, Logic) | [Demo](#) | [Code](#) |
+| **Etch-a-Sketch** | Foundations | JavaScript, CSS Grid/Flexbox | [Demo](#) | [Code](#) |
+| **Calculator** | Foundations | JavaScript, CSS, Semantic HTML | [Demo](#) | [Code](#) |
 
 ---
 
