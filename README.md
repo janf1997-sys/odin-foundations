@@ -20,6 +20,14 @@ The primary objective of this course is establishing rigorous fundamentals in fr
 
 ---
 
+## 🏋️ Practice & Exercises
+
+Complementary drill exercises and katas completed alongside the main projects:
+
+* **[CSS Exercises (Fork)](https://github.com/janf1997-sys/css-exercises):** Practical drills covering selectors, the cascade, box model, and Flexbox layouts.
+
+---
+
 ## 🧠 Key Technical Learnings
 
 - **Linux & Tooling (WSL2):** Developing inside a native Linux distribution on Windows via WSL2. Command-line navigation, file permissions, shell scripting basics, and seamless VS Code Remote integration.
