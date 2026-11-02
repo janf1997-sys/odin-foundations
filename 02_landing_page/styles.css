@@ -84,6 +84,7 @@ button {
   border: none;
   border-radius: 5px;
   padding: 6px 12px;
+  font-weight: 600;
 }
 .image {
   flex: 1;
@@ -149,4 +150,39 @@ img {
 .quote {
   max-width: 960px;
   margin: 0 auto;
+}
+#cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 96px;
+}
+.cta-content {
+  background-color: var(--color-accent);
+  padding: 48px 96px;
+  display: flex;
+  border-radius: 10px;
+  gap: 96px;
+  justify-content: center;
+  align-items: center;
+}
+.cta-content button {
+  border: 2px solid var(--color-light);
+}
+
+.cta-title {
+  color: var(--color-light);
+  font-weight: 600;
+  font-size: var(--fs-md);
+  margin-bottom: 8px;
+}
+.cta-sub {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+footer {
+  background-color: var(--color-dark);
+  text-align: center;
+  color: var(--color-muted);
+  padding: 24px;
 }
