@@ -24,3 +24,129 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+header {
+  background-color: var(--color-dark);
+  padding: 16px 0 64px 0;
+}
+.logo {
+  font-size: var(--fs-md);
+  color: var(--color-light);
+  font-weight: var(--fw-bold);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+.nav a {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  text-decoration: none;
+}
+.top,
+.content {
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.title {
+  font-size: var(--fs-xl);
+  color: var(--color-light);
+  font-weight: var(--fw-bold);
+}
+.subtitle {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+.header-left {
+  flex: 1;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+button {
+  width: 100px;
+  background-color: var(--color-accent);
+  color: var(--color-muted);
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+img {
+  max-width: 100%;
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 96px;
+}
+
+.section-title {
+  font-size: var(--fs-lg);
+  color: var(--color-dark);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+.containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+}
+.container {
+  max-width: 150px;
+  width: 150px;
+}
+.rec {
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--color-accent);
+  border-radius: 10px;
+}
+.subtext {
+  text-align: center;
+  margin: 8px;
+  font-weight: var(--fw-light);
+  font-size: 14px;
+}
+#quote {
+  background-color: var(--color-muted);
+  padding: 86px;
+}
+.quote-text {
+  font-size: var(--fs-lg);
+  color: var(--color-dark);
+  font-weight: var(--fw-light);
+  font-style: italic;
+  text-align: center;
+}
+.quote-author {
+  text-align: end;
+  font-weight: var(--fw-bold);
+}
+.quote {
+  max-width: 960px;
+  margin: 0 auto;
+}
