@@ -1,0 +1,26 @@
+:root {
+  --color-dark: #1f2937;
+  --color-light: #f9faf8;
+  --color-muted: #e5e7eb;
+  --color-accent: #3882f6;
+
+  --fs-sm: 1.125rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 2.25rem;
+  --fs-xl: 3rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
