@@ -27,12 +27,16 @@ function playRound(humanChoice, computerChoice) {
     console.log("It's a tie!");
   } else if (fix === 'paper' && computerChoice === 'scissors') {
     console.log('You lose!');
+    computerScore++;
   } else if (fix === 'rock' && computerChoice === 'paper') {
     console.log('You lose!');
+    computerScore++;
   } else if (fix === 'scissors' && computerChoice === 'rock') {
     console.log('You lose!');
+    computerScore++;
   } else {
     console.log('You win!');
+    humanScore++;
   }
 }
 
