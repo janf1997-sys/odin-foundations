@@ -11,13 +11,13 @@ The primary objective of this course is establishing rigorous fundamentals in fr
 ## 🚀 Key Projects & Live Demos
 
 
-| Project                 | Track       | Tech Stack                           |                                      Live Demo                                      |                                    Source Code                                    |
-| :---------------------- | :---------- | :----------------------------------- | :---------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| **Recipes**             | Foundations | HTML                                 | [Demo](https://janf1997-sys.github.io/odin-foundations/01_odin-recipes/index.html) | [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/01_odin-recipes) |
-| **Landing Page**        | Foundations | HTML, Modern CSS (Flexbox)           |  [Demo](https://janf1997-sys.github.io/odin-foundations/02_landing_page/index.html) | [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/02_landing_page) |
-| **Rock Paper Scissors** | Foundations | JavaScript (DOM Manipulation, Logic) |                                      [Demo](#)                                      |                                     [Code](#)                                     |
-| **Etch-a-Sketch**       | Foundations | JavaScript, CSS Grid/Flexbox         |                                      [Demo](#)                                      |                                     [Code](#)                                     |
-| **Calculator**          | Foundations | JavaScript, CSS, Semantic HTML       |                                      [Demo](#)                                      |                                     [Code](#)                                     |
+| Project                 | Track       | Tech Stack                                        |                                         Live Demo                                         |                                        Source Code                                        |
+| :---------------------- | :---------- | :------------------------------------------------ | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| **Recipes**             | Foundations | HTML                                              |    [Demo](https://janf1997-sys.github.io/odin-foundations/01_odin-recipes/index.html)    |    [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/01_odin-recipes)    |
+| **Landing Page**        | Foundations | HTML, Modern CSS (Flexbox)                        |    [Demo](https://janf1997-sys.github.io/odin-foundations/02_landing_page/index.html)    |    [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/02_landing_page)    |
+| **Rock Paper Scissors** | Foundations | JavaScript (DOM Manipulation, Logic) Console only | [Demo](https://janf1997-sys.github.io/odin-foundations/03_rock-paper-scissors/index.html) | [Code](https://github.com/janf1997-sys/odin-foundations/tree/main/03_rock-paper-scissors) |
+| **Etch-a-Sketch**       | Foundations | JavaScript, CSS Grid/Flexbox                      |                                         [Demo](#)                                         |                                         [Code](#)                                         |
+| **Calculator**          | Foundations | JavaScript, CSS, Semantic HTML                    |                                         [Demo](#)                                         |                                         [Code](#)                                         |
 
 ---
 
