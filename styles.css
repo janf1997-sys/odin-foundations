@@ -28,23 +28,33 @@ h6 {
   color: var(--text-heading);
 }
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
 }
-.project-list {
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+.project-list,
+.exercises-list {
   list-style-type: none;
 }
-.project-list li {
+.project-list li,
+.exercises-list li {
   margin-bottom: 0.5rem;
 }
-.project-list a {
+.project-list a,
+.exercises-list a {
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
 }
-.project-list a:hover {
+.project-list a:hover,
+.exercises-list a:hover {
   text-decoration: underline;
   color: var(--accent);
 }
@@ -92,4 +102,11 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+hr {
+  margin: 5px;
+  border: none;
+  height: 2px;
+  background-color: var(--text-main);
 }
