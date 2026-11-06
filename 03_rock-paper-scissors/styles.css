@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.1);
+  scale: 1.1;
   border: 1px solid #de7c5a;
 }
 
@@ -97,4 +97,10 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.choice-icon.scissors {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(90deg);
 }
