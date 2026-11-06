@@ -204,9 +204,7 @@ footer {
   justify-self: end;
   display: inline-flex;
   align-items: center;
-
   border-radius: 100px;
-
   transition: ease-in-out 0.2s;
   font-weight: 600;
   gap: 0.5rem;
