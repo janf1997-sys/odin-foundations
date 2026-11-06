@@ -12,43 +12,63 @@ function getComputerChoice() {
       return 'scissors';
   }
 }
+const container = document.querySelector('.btn-container');
+container.addEventListener('click', e => {
+  playRound(e.target.classList[1], getComputerChoice());
+});
 
-function getHumanChoice() {
-  let userInput = prompt();
-  return userInput;
+let humanScore = 0;
+let computerScore = 0;
+const result = document.querySelector('.result');
+const score = document.querySelector('.score');
+const restartBtn = document.querySelector('.restart');
+
+function playRound(humanChoice, computerChoice) {
+  if (humanChoice === computerChoice) {
+    result.textContent = "It's a tie!";
+  } else if (
+    (humanChoice === 'paper' && computerChoice === 'scissors') ||
+    (humanChoice === 'rock' && computerChoice === 'paper') ||
+    (humanChoice === 'scissors' && computerChoice === 'rock')
+  ) {
+    result.textContent = 'You lose!';
+    computerScore++;
+  } else {
+    result.textContent = 'You win!';
+    humanScore++;
+  }
+  score.textContent = `${humanScore}:${computerScore}`;
+
+  if (humanScore === 5) {
+    result.textContent = ' ';
+
+    score.textContent = "Congratulations you've won the game!";
+    disableButtons();
+    restartBtn.style.display = 'block';
+    restartBtn.addEventListener('click', resetGame);
+  } else if (computerScore === 5) {
+    result.textContent = ' ';
+
+    score.textContent = 'You lost the game!';
+    disableButtons();
+    restartBtn.style.display = 'block';
+    restartBtn.addEventListener('click', resetGame);
+  }
 }
 
-function playGame() {
-  let humanScore = 0;
-  let computerScore = 0;
-  function playRound(humanChoice, computerChoice) {
-    let fix = humanChoice.toLowerCase();
-    if (fix === computerChoice) {
-      console.log("It's a tie!");
-    } else if (
-      (fix === 'paper' && computerChoice === 'scissors') ||
-      (fix === 'rock' && computerChoice === 'paper') ||
-      (fix === 'scissors' && computerChoice === 'rock')
-    ) {
-      console.log('You lose!');
-      computerScore++;
-    } else {
-      console.log('You win!');
-      humanScore++;
-    }
-  }
+function disableButtons() {
+  const buttons = document.querySelectorAll('.choice');
+  buttons.forEach(btn => (btn.disabled = true));
+}
 
-  for (let x = 0; x < 5; x++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-  }
-  const scoreBoard = `Your score ${humanScore} Computer score ${computerScore}`;
-  if (humanScore > computerScore) {
-    console.log('Congartulation you won the game! ' + scoreBoard);
-  } else if (humanScore < computerScore) {
-    console.log('You lost the game! ' + scoreBoard);
-  } else {
-    console.log('You tied the game ' + scoreBoard);
-  }
+function resetGame() {
+  humanScore = 0;
+  computerScore = 0;
+
+  score.textContent = '0:0';
+  result.textContent = 'Choose your weapon to start!';
+
+  const buttons = document.querySelectorAll('.choice');
+  buttons.forEach(btn => (btn.disabled = false));
+  restartBtn.style.display = 'none';
 }
