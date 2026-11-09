@@ -24,7 +24,6 @@ body {
 }
 
 .painted {
-  background-color: red;
   flex-grow: 1;
 }
 

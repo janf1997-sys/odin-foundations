@@ -33,5 +33,23 @@ function buildGrid(amount) {
 buildGrid(16);
 
 function paint(event) {
-  event.target.classList.add('painted');
+  const pixel = event.target;
+
+  if (!pixel.dataset.hue) {
+    const hue = Math.floor(Math.random() * 360);
+    const light = 90;
+
+    pixel.dataset.hue = hue;
+    pixel.dataset.lightness = light;
+
+    pixel.style.backgroundColor = `hsl(${hue}, 100%, ${light}%)`;
+    pixel.classList.add('painted');
+  } else {
+    const hue = pixel.dataset.hue;
+    const currentLightness = Number(pixel.dataset.lightness);
+    const newLightness = Math.max(50, currentLightness - 5);
+    pixel.dataset.lightness = newLightness;
+    pixel.style.backgroundColor = `hsl(${hue}, 100%, ${newLightness}%)`;
+    console.log(newLightness);
+  }
 }
