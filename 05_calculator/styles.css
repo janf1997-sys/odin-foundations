@@ -7,3 +7,15 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.calc-button {
+  padding: 5px;
+  text-align: center;
+}
