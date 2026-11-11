@@ -33,3 +33,5 @@ function operate(a, operator, b) {
       return divide(a, b);
   }
 }
+
+const pad = document.querySelectorAll('.pad');
