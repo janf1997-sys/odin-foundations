@@ -111,3 +111,20 @@ function getNumbers(e) {
   }
 }
 pad.addEventListener('click', getNumbers);
+document.addEventListener('keydown', keyboard);
+
+function keyboard(e) {
+  let selector = `button[data-number="${e.key}"], button[data-function="${e.key}"]`;
+
+  if (e.key === 'Enter' || e.key === '=') {
+    selector = 'button[data-equals]';
+  } else if (e.key === 'Escape' || e.key.toLowerCase() === 'c') {
+    selector = 'button[data-clear]';
+  }
+  const targetButton = document.querySelector(selector);
+
+  if (targetButton) {
+    targetButton.click();
+    console.log(targetButton);
+  }
+}
