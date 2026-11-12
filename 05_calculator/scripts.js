@@ -55,7 +55,8 @@ function resetCalculator() {
 }
 
 function executeCalculation() {
-  const result = operate(parseInt(num1), operator, parseInt(num2));
+  const result = operate(parseFloat(num1), operator, parseFloat(num2));
+
   // Catch divison by zero or invalid calculations
   if (!Number.isFinite(result)) {
     display.textContent = 'ERROR';
@@ -70,9 +71,10 @@ function executeCalculation() {
   num1 = result;
   num2 = '';
   updateDisplay(result);
-  console.log(isCalculated);
   return true;
 }
+
+const MAX_DIGITS = 26;
 
 function handleNumber(digit) {
   // If '=' was just executed, the next number starts a completely new calculation
@@ -87,9 +89,15 @@ function handleNumber(digit) {
 
   // Append digit to num1 if no operator has been chosen yet, otherwise append to num2
   if (!operator) {
+    if (num1.length >= MAX_DIGITS) {
+      return;
+    }
     num1 += digit;
     updateDisplay(num1);
   } else {
+    if (num2.length >= MAX_DIGITS) {
+      return;
+    }
     num2 += digit;
     updateDisplay(num2);
   }
@@ -158,7 +166,6 @@ function keyboard(e) {
 
   if (targetButton) {
     targetButton.click();
-    console.log(targetButton);
   }
 }
 
