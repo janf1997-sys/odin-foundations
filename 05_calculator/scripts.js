@@ -81,7 +81,7 @@ function handleNumber(digit) {
   if (isCalculated) {
     operator = '';
     num2 = '';
-    num1 = digit;
+    num1 = digit === '.' ? '0.' : digit;
     isCalculated = false;
     updateDisplay(num1);
     return;
@@ -89,16 +89,30 @@ function handleNumber(digit) {
 
   // Append digit to num1 if no operator has been chosen yet, otherwise append to num2
   if (!operator) {
+    if (digit === '.' && num1.includes('.')) {
+      return;
+    }
     if (num1.length >= MAX_DIGITS) {
       return;
     }
-    num1 += digit;
+    if (digit === '.' && num1 === '') {
+      num1 = '0.';
+    } else {
+      num1 += digit;
+    }
     updateDisplay(num1);
   } else {
+    if (digit === '.' && num2.icludes('.')) {
+      return;
+    }
     if (num2.length >= MAX_DIGITS) {
       return;
     }
-    num2 += digit;
+    if (digit === '.' && num2 === '') {
+      num2 = '0.';
+    } else {
+      num2 += digit;
+    }
     updateDisplay(num2);
   }
 }
