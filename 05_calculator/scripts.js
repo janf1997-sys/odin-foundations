@@ -68,7 +68,7 @@ function executeCalculation() {
   }
 
   // Store intermediate result into num1 for chaining and clear num2
-  num1 = result;
+  num1 = String(result);
   num2 = '';
   updateDisplay(result);
   return true;
@@ -136,11 +136,27 @@ function handleEquals() {
   }
 }
 
+function handleBackspace() {
+  if (isCalculated) {
+    return;
+  }
+  if (operator || num2) {
+    num2 = num2.slice(0, -1);
+    updateDisplay(num2 || '0');
+    return;
+  }
+  if (!operator || num1) {
+    num1 = num1.slice(0, -1);
+    updateDisplay(num1 || '0');
+    return;
+  }
+}
+
 function getNumbers(e) {
   if (e.target.tagName !== 'BUTTON') {
     return;
   }
-  const { number, function: op, equals, clear } = e.target.dataset;
+  const { number, function: op, equals, clear, delete: del } = e.target.dataset;
 
   if (number) {
     handleNumber(number);
@@ -150,6 +166,8 @@ function getNumbers(e) {
     handleEquals();
   } else if (clear) {
     resetCalculator();
+  } else if (del) {
+    handleBackspace();
   }
 }
 
@@ -161,6 +179,8 @@ function keyboard(e) {
     selector = 'button[data-equals]';
   } else if (e.key === 'Escape' || e.key.toLowerCase() === 'c') {
     selector = 'button[data-clear]';
+  } else if (e.key === 'Backspace' || e.key === 'Delete') {
+    selector = 'button[data-delete]';
   }
   const targetButton = document.querySelector(selector);
 
